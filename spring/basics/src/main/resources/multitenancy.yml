@@ -1,0 +1,34 @@
+hibernate:
+  dialect: org.hibernate.dialect.H2Dialect
+  format_sql: true
+  hbm2ddl:
+    auto: update
+  show_sql: true
+  default_schema: CUSTOMER_CONTACTS_ADMIN
+
+app:
+  tenants:
+    cz:
+      datasource:
+        driverClassName: org.h2.Driver
+        jdbcUrl: jdbc:h2:./target/cz;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE;INIT=RUNSCRIPT FROM 'classpath:schema-h2.sql'
+        username: admin
+        password:  pass
+    es:
+      datasource:
+        driverClassName: org.h2.Driver
+        jdbcUrl: jdbc:h2:./target/es;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE;INIT=RUNSCRIPT FROM 'classpath:schema-h2.sql'
+        username: admin
+        password:  pass
+    fr:
+      datasource:
+        driverClassName: org.h2.Driver
+        jdbcUrl: jdbc:h2:./target/fr;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE;INIT=RUNSCRIPT FROM 'classpath:schema-h2.sql'
+        username: admin
+        password:  pass
+    it:
+      datasource:
+        driverClassName: org.h2.Driver
+        jdbcUrl: jdbc:h2:./target/it;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE;INIT=RUNSCRIPT FROM 'classpath:schema-h2.sql'
+        username: admin
+        password:  pass

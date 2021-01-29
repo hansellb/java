@@ -1,0 +1,10 @@
+my_first-property=some value
+ANOTHER_PROPERTY=some other value
+boolean.property=true
+integer.property=10000
+string.property=This is a string
+array.property=1st,2nd,3rd,4th,5th,6th
+map.property={key1:'value1', key2:'value2', KEY3:"value3"}
+samepurpose.properties.prop1=1
+samepurpose.properties.prop2=2
+samepurpose.properties.prop3=3
